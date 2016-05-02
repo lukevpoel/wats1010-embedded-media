@@ -38,10 +38,6 @@ header {
   background-color: #2bb8ff;
 }
 
-header nav {
-  float: bottom;
-}
-
 #non-header {
   margin-top: 200px;
 }
