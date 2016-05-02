@@ -2,14 +2,15 @@
 <html>
 
     <head>
+        <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Monkaa: Watch and Download the animated short film</title>
         <meta name="description" content="Monkaa is a blue-furred, pink-faced monkey who consumes a crystallized meteorite, making him invincibly strong and too hot to handle. Watch and download the animated short film here--for free!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- TODO: Make a favicon that better represents the page. -->
-        <link rel="shortcut icon" href="favicon (2).ico">
+        <link rel="shortcut icon" href="favicon (2).ico"> <!-- More interesting favicon-->
         <link rel="stylesheet" href="css/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,400italic' rel='stylesheet' type='text/css'>
     </head>
 
     <body>
@@ -17,68 +18,56 @@
           <nav>
             <ul class="main-nav">
                 <li><a href="#watch">Watch</a></li>
+                <li><a href="#download">Download</a></li>
                 <li><a href="#listen">Listen</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#download">Download</a></li>
+                
             </ul>
+             <div id="social-navbar">
+                <h2>Share</h2>
+                <ul class="social-nav">
+                    <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lukevpoel.github.io/wats1010-embedded-media/" data-via="skywalkervp">Tweet</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+                    <li><iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Flukevpoel.github.io%2Fwats1010-embedded-media%2F&layout=icon_link&mobile_iframe=true&width=48&height=15&appId" width="48" height="15" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></li>
+                    <li><a href="https://www.pinterest.com/pin/create/button/"> <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></li>
+                      <!-- Removed instagram and replaced with pinterest. Instagram has no reasonable way to share full pages -->
+                </ul>
+              </div>
           </nav>
         </section>
-        <header>
-            <!-- TODO: Create an elegant header using either one of the images
-                 or the video loop included in this repository. Make sure the
-                 page navigation is presented clearly and in a user-friendly
-                 way. Also, be sure to choose the proper image format as you
-                 insert backgrounds and other images into the page. Balance
-                 image quality with file size to achieve the best user
-                 experience. -->
+        <header id="header-image">
+            <!-- I didn't like how empty the header would have looked, and I wanted my navbar to scroll
+                 so I replaced the entire header with the image -->
             <!-- <video id="flying-monkey-loop" autoplay loop poster="/media/video/loop_poster.png">
                  <!-- Video is embedded in the WEBM format - possible code?
             <source src="/media/video/flying_monkey_loop.mp4" type="video/webm">
-            </video> -->
+            </video> this is some code that I was hoping to use for the header.
+                      unfortunately I couldn't get it to work early enough-->
             <!-- trying to have a persistent nav bar that moves down the page 
-                 with the user containing nav links and social media sharing links -->   
+                 with the user containing nav links and social media sharing links. -->   
        </header>
-            
-        <aside id="social">
-            <!-- TODO: Experiment with different ways of making this set of
-                 share links stand out and stay near the user all the time.
-                 Try using 'absolute', 'fixed', or even 'sticky' positioning
-                 to achieve a user-friendly effect. You may also use the
-                 `:hover` pseudoselector to trigger height or width changes
-                 that could help you make a more interactive design. -->
-            <h2>Share</h2>
-            <ul class="social-links">
-                <li class="twitter"><a href="http://twitter.com">Twitter</a></li>
-                <li class="facebook"><a href="http://facebook.com">Facebook</a></li>
-                <li class="instagram"><a href="http://instagram.com">Instagram</a></li>
-            </ul>
-        </aside>
-        <div id="non-header">
+          
+       <div id="non-header">
         <section id="watch">
           <h1>Watch Monkaa</h1> <h5>An open source short film</h5>
-            <!-- TODO: Embed the .webm and .mp4 video with full controls for a
-                 convenient and attractive video viewing experience. -->
-          <video width="900" height="506" controls poster="/img/monkaa_title.png">
+          <video width="860" height="auto" controls poster="/img/monkaa_title.png">
             <source src="/media/video/monkaa_1080p.webm" type="video/webm">
             <source src="media/video/monkaaMp4.mp4" type="video/mp4">
               Your browser does not support the video tag.
           </video> 
             <!-- Adjusted webpage layout to put content (video) up front and center
-                 easy internal links drop the consumer down to download section if they choose -->
+                 easy internal links drop the consumer down to download section if they choose.
+                 I know the navbar covers the content that it scrolls to. not sure how to fix.-->
             <h3><a href="#download">Download the Video</a></li></h3>
         </section>
       <div id="AV-downloads">
         <section id="download">
-            <h2>Downloads</h2>
-            <!-- TODO: Embed the .webm and .mp4 video with full controls for a
-                 convenient and attractive video viewing experience. -->
-
-            <!-- TODO: Style an elegant download link to download the video. -->
+          <h2>Downloads</h2> <!-- TODO: Style an elegant download link to download the video. -->
             <p>
                 Click below to download either MP4 or WEBM versions of this video.
                 <br>
-                <a class="download-button" href="media/video/monkaa_1080p.mp4">.MP4 Version</a><br>
-                <a class="download-button" href="media/video/monkaa_1080p.webm">.WEBM Version</a>
+                <a class="download-button" href="/media/video/monkaaMp4.mp4">.MP4 Version</a><br>
+                <a class="download-button" href="/media/video/monkaa_1080p.webm">.WEBM Version</a>
             </p>
         </section>
 
@@ -105,12 +94,9 @@
             <p class="lead">Monkaa is a blue-furred, pink-faced monkey who consumes a crystallized meteorite, making him invincibly strong and too hot to handle. Exploring his new superpowers, Monkaa zooms through an entire universe. </p>
 
             <ul class="weybec-people">
-                <!-- TODO: You must choose the proper image format to use for
-                     each headshot below. Images are located in the
-                     ``img/weybec/`` directory. -->
                 <li>
-                    <img class="headshot" src="TODO" alt="Pratik Solanki headshot"><br>
                     Pratik Solanki<br>
+                    <img class="headshot" src="/img/weybec/pratik_solanki.png" alt="Pratik Solanki headshot"><br>
                     Co-Founder
                 </li>
                 <li>

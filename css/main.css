@@ -13,9 +13,15 @@ nav, aside, section, footer, header, main {
   margin: 0;
 }
  html {
-     color: green;
- }
-
+    color: #00FFFF;  
+    background-image: url(/img/cloudy-background.gif);
+    background-size: 100%;
+    border-style: none; /* Why is there a border on this image? */
+    border-radius: 0px;
+    border: 0px;
+   font-family: Univers, Oswald, Verdana, Roboto, sans-serif;
+}
+   
 body {
   width: 900px;
   margin-bottom: 20px;
@@ -31,19 +37,46 @@ body {
   top: 0;
   z-index: 9999;
   width: 900px;
-  height: 50px;
-  background-color: #00a087;
+  height: 90px;
+  background-image: url(/img/monkaa_monkeyhang.jpg);
+  background-size: 900px 120px;
+  background-repeat: no-repeat;
+  border-style: hidden;
+  border-width: 5px;
+  border-radius: 25px;
+}
+
+#social-navbar {
+  padding: 2px;
+  border: 5px solid yellow;
+  position: fixed;
+  right: 100px;
+  top: 0px;
+  z-index: 9999;
+  width: 100px;
+  height: auto;
+  background-color: #73AD21;
+  border-radius: 25px;
+}
+
+#social-navbar nav ul li {
+  padding: 0;
+}
+
+.main-nav {
+  text-align: center;
+  padding-top: 30px;
 }
 
 header {
-  margin-top: 50px;
+  margin-top: 90px;
   width: 900px;
   height: 250px;
   background-color: #00a087;
-  border: 5px solid green;
   background-image: url(/img/official_header.jpg);
   background-size: 100%;
   background-color: #2bb8ff;
+  border-radius: 25px;
 }
 
 h5 {
@@ -52,7 +85,9 @@ h5 {
 }
 
 #non-header {
-  
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px;
 }
 
 /*video#flying-monkey-loop {
@@ -64,48 +99,19 @@ h5 {
 }*/
 
 nav {
-  border: 5px solid red;
-}
 
-section {
-  border: 5px solid blue;
-}
-
-aside {
-  border: 5px solid yellow;
-  position: fixed;
-  left: 0;
-  top: 100px;
-  z-index: 9999;
-  width: 100px;
-  height: 100px;
-  background-color: #00a087;
-}
-
-.subtitle {
 }
 
 nav ul li {
   display: inline;
   width: 100%;
+  padding: 20px;
 }
 
-.main-nav {
-  
+section {
 }
 
-.persistent-navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 50px;
-  background-color: #00a087;
-}
-
-.persistent-navbar ul li {
-  margin-right: 10%;
+.subtitle {
 }
 
 #watch {
@@ -139,10 +145,17 @@ nav ul li {
 #about {
   clear: both;
   padding: 5px;
+  margin-top: -50px;
+  padding-top: 50px;
   padding-left: 15px;
 }
 
-.webec-people {
+.lead {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 120%;
+}
+
+.weybec-people {
   
 }
 
@@ -152,5 +165,22 @@ nav ul li {
 }
 
 footer {
+  padding: 15px;
+  background-image: url(/img/monkaa_monkeyhang.jpg);
+  background-size: 900px 120px;
+  background-repeat: no-repeat;
   border: 5px solid orange;
+  border-radius: 25px;
+}
+
+a {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a:link {
+  color: #FF1493;
+}
+
+a:visited {
+  color: darkmagenta;
 }
