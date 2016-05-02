@@ -18,25 +18,61 @@ nav, aside, section, footer, header, main {
 
 body {
   width: 900px;
-  margin-top: 100px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   font-family: Geneva,Tahoma,Verdana,sans-serif;
   font-size: 15px;
+  z-index: 1;
 }
 
 header {
-   
+  width: 900px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  height: 150px;
+  background-color: #00a087;
+  border: 5px solid green;
+  background-image: url(/img/official_header.png);
+  background-color: #2bb8ff;
+}
+
+header nav {
+  float: bottom;
+}
+
+#non-header {
+  margin-top: 200px;
+}
+
+/*video#flying-monkey-loop {
+  top: 0px; 
+  left: 0px; 
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -2; // Put the video behind all other elements
+}*/
+
+nav {
+  border: 5px solid red;
+}
+
+section {
+  border: 5px solid blue;
+}
+
+aside {
+  border: 5px solid yellow;
 }
 
 .subtitle {
-  
 }
 
 nav ul li {
   display: inline;
 }
+
 .main-nav {
   
 }
