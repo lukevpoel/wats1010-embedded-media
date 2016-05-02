@@ -38,20 +38,7 @@
             <!-- trying to have a persistent nav bar that moves down the page 
                  with the user containing nav links and social media sharing links -->   
        </header>
-        <div id="non-header">
-        <section id="watch">
-          <h1>Watch Monkaa</h1> <h5>An open source short film</h5>
-            <!-- TODO: Embed the .webm and .mp4 video with full controls for a
-                 convenient and attractive video viewing experience. -->
-          <video width="900" height="506" controls poster="/img/monkaa_title.png">
-            <source src="/media/video/monkaa_1080p.webm" type="video/webm"> \
-              Your browser does not support the video tag.
-          </video> 
-            <!-- Adjusted webpage layout to put content (video) up front and center
-                 easy internal links drop the consumer down to download section if they choose -->
-            <h3><a href="#download">Download the Video</a></li></h3>
-        </section>
-      
+            
         <aside id="social">
             <!-- TODO: Experiment with different ways of making this set of
                  share links stand out and stay near the user all the time.
@@ -66,7 +53,21 @@
                 <li class="instagram"><a href="http://instagram.com">Instagram</a></li>
             </ul>
         </aside>
-
+        <div id="non-header">
+        <section id="watch">
+          <h1>Watch Monkaa</h1> <h5>An open source short film</h5>
+            <!-- TODO: Embed the .webm and .mp4 video with full controls for a
+                 convenient and attractive video viewing experience. -->
+          <video width="900" height="506" controls poster="/img/monkaa_title.png">
+            <source src="/media/video/monkaa_1080p.webm" type="video/webm">
+            <source src="media/video/monkaaMp4.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video> 
+            <!-- Adjusted webpage layout to put content (video) up front and center
+                 easy internal links drop the consumer down to download section if they choose -->
+            <h3><a href="#download">Download the Video</a></li></h3>
+        </section>
+      <div id="AV-downloads">
         <section id="download">
             <h2>Downloads</h2>
             <!-- TODO: Embed the .webm and .mp4 video with full controls for a
@@ -76,22 +77,26 @@
             <p>
                 Click below to download either MP4 or WEBM versions of this video.
                 <br>
-                <a class="download-button" href="media/video/monkaa_1080p.mp4">.MP4 Version</a>
+                <a class="download-button" href="media/video/monkaa_1080p.mp4">.MP4 Version</a><br>
                 <a class="download-button" href="media/video/monkaa_1080p.webm">.WEBM Version</a>
             </p>
         </section>
 
         <section id="listen">
             <h2>Listen</h2>
+             <audio controls>
+               <source src="/media/audio/monkaa_soundtrack.mp3" type="audio/mpeg">
+                  Your browser does not support mp3 audio.
+             </audio> 
             <!-- TODO: Embed an audio player so users can play back the
                  soundtrack MP3 directly on the page. -->
 
             <!-- TODO: Style an elegant download link to download the video. -->
             <p>
-                <a class="download-button" href="media/audio/monkaa_soundtrack.mp3">Download as MP3</a>
+                <a class="download-button" href="media/audio/monkaa_soundtrack.mp3">.MP3 Version</a>
             </p>
         </section>
-
+      </div>
         <section id="about">
             <!-- TODO: Style this text so it is comfortable to read and nice
                  to look at. Style the "lead" paragraph to be more eye-catching
@@ -109,14 +114,14 @@
                     Co-Founder
                 </li>
                 <li>
-                    <img class="headshot" src="TODO" alt="Nita Ravalji headshot"><br>
                     Nita Ravalji<br>
+                    <img class="headshot" src="/img/weybec/Nita-ravalji1.png" alt="Nita Ravalji headshot"><br>
                     Co-Founder
                 </li>
                 <li>
-                    <img class="headshot" src="TODO" alt="Niyal Parmar headshot"><br>
-                    Niyal Parmar<br>
-                    Co-Founder
+                  Niyal Parmar<br>
+                  <img class="headshot" src="/img/weybec/niyal_parmar.png" alt="Niyal Parmar headshot"><br>
+                  Co-Founder
                 </li>
             </ul>
 

@@ -52,7 +52,7 @@ h5 {
 }
 
 #non-header {
-  margin-top: 200px;
+  
 }
 
 /*video#flying-monkey-loop {
@@ -109,14 +109,10 @@ nav ul li {
 }
 
 #watch {
-  
+
 }
 
 .download-button {
-  
-}
-
-#social {
   
 }
 
@@ -124,12 +120,26 @@ nav ul li {
   
 }
 
+#download {
+  width: 420px;
+  float: left;
+  padding: 5px;
+}
+
 #listen {
-  
+  width: 420px;
+  float: right;
+  padding: 5px;
+}
+
+#listen audio {
+  padding: 4px;
 }
 
 #about {
-  
+  clear: both;
+  padding: 5px;
+  padding-left: 15px;
 }
 
 .webec-people {
@@ -137,5 +147,10 @@ nav ul li {
 }
 
 .headshot {
-  
+  width: 300px;
+  height: auto;  
+}
+
+footer {
+  border: 5px solid orange;
 }
