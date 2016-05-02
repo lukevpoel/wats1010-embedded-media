@@ -26,16 +26,29 @@ body {
   z-index: 1;
 }
 
-header {
-  width: 900px;
+#fixed-navbar {
   position: fixed;
   top: 0;
   z-index: 9999;
-  height: 150px;
+  width: 900px;
+  height: 50px;
+  background-color: #00a087;
+}
+
+header {
+  margin-top: 50px;
+  width: 900px;
+  height: 250px;
   background-color: #00a087;
   border: 5px solid green;
-  background-image: url(/img/official_header.png);
+  background-image: url(/img/official_header.jpg);
+  background-size: 100%;
   background-color: #2bb8ff;
+}
+
+h5 {
+  padding: 0px;
+  margin: 0px;
 }
 
 #non-header {
@@ -60,6 +73,13 @@ section {
 
 aside {
   border: 5px solid yellow;
+  position: fixed;
+  left: 0;
+  top: 100px;
+  z-index: 9999;
+  width: 100px;
+  height: 100px;
+  background-color: #00a087;
 }
 
 .subtitle {
@@ -67,6 +87,7 @@ aside {
 
 nav ul li {
   display: inline;
+  width: 100%;
 }
 
 .main-nav {
